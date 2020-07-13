@@ -1,1 +1,215 @@
 
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		
+		<link rel= "Stylesheet" href="FormStyle.css">
+	<style type="text/css">
+		
+		.formDiv{
+			
+			width:500px;
+			background-color:lightblue;
+			color:black;
+			margin: 20px auto;
+			padding:50px 50px 50px 50px;
+		}
+		input[type=text]{
+			height:50px;
+			width:250px;
+			border: 1px solid red;
+			border-radius: 5px;
+			
+		}
+		level{
+			color:red;
+		}
+		input[type=submit]{
+			width:130px;
+			height:30px;
+			background-color:red;
+			border-radius:5px;
+			border:2px solid gray;
+			cursor: pointer;
+			Transition:all .30s;
+		}
+		input[type=submit]:hover{
+			background-color:green;
+		}
+
+		input[type=reset]{
+			width:130px;
+			height:30px;
+			background-color:red;
+			border-radius:5px;
+			border:2px solid gray;
+			cursor: pointer;
+			Transition:all .30s;
+		}
+
+		input[type=reset]:hover{
+			background-color:green;
+		}
+
+		.content{
+			padding: 10px 10px 20px 10px;
+			background-color: white;
+			width: 284px;
+			border: 1px solid #ccd0c8;
+			box-shadow: 10px 10px 8px #ccd2d7;
+			border-bottom:3px solid red;
+		}
+		.right{
+			transform: rotate(7deg);
+		}
+		.left{
+			transform: rotate(-8deg);
+		}
+		.content:last-child{
+			border-bottom:none;
+		}
+
+		.content img{
+			width:250px;
+			height:150px;
+		}
+
+		Make sure that padding behaves as expected
+		* {box-sizing:border-box}
+
+		Container for skill bars
+		.container {
+		  width: 100%; Full width
+		  background-color: #ddd; Grey background
+		}
+
+		.skills {
+		  text-align: right; Right-align text
+		  padding-top: 10px; Add top padding
+		  padding-bottom: 10px; Add bottom padding
+		  color: white; White text color
+		}
+
+		.html {width: 90%; background-color: #4CAF50;} Green
+		.css {width: 80%; background-color: #2196F3;} Blue
+		.js {width: 65%; background-color: #f44336;} Red
+		.php {width: 60%; background-color: #808080;} Dark Grey
+	</style>	
+	</head>
+	<body>
+	<!--padding-left:50px;-->
+		<!--placeholder="Write Your First Name"-->
+			
+		<div class="formDiv">
+		<form action="" method="">
+		<fieldset>
+		<legend>This is Our Registration Form</legend>
+			<h1 style="display:block;background-color:#808080;text-align:center;color:white">Personal Information</h1>
+			<label>First Name:</label><br><input type="text" name="first Name" value="Nur Mohammad"/><br /><br />
+			<label>Last Name:</label><br><input type="text" name="Last Name" placeholder="Last Name"/><br/><br />
+			<label>User Name:</label><br><input type="text" name="User Name" placeholder="User Name"/><br/><br />
+			Gender:
+			<input type="radio" name="gender" value="male" checked=""/>Male
+			<input type="radio" name="gender" value="female"/>Female <br /><br />
+
+			<label for="university">University:</label><br />
+			<input type="text" placeholder="Write Your University Name"/><br /><br />
+			
+			<ul>
+				<li><label for="cgpa">CGPA</label><br /></li>
+				<input type="text" /><br /><br />
+			</ul>
+			
+			
+			
+			Country:<br>
+			<select name="Country">
+				<option>Bangladesh</option>
+				<option>India</option>
+				<option>Pakistan</option>
+				<option>Bhutan</option>
+				<option>Nepal</option>
+				<option>Srilanka</option>
+				<option selected ="">Afganistan</option>
+			</select><br/><br />
+			
+			Birthdate:<br>
+				<input type="data" min="1950-12-01" max="2020-12-01"/><br/><br />
+				
+			Age:<br>
+			<input type="number" max="50" min="18"><br/><br />
+			
+			Email:<br>
+			<input type="email" max="50" min="10"><br/><br />
+			
+			Favourite Color:
+			<input type="color"><br/><br />
+			
+			Password:<br>
+			<input type="password"/><br/><br />
+			<h1 style="text-align:center;display:block;background-color:#808080;color:white">Working Area</h1>
+			
+			<div class="workingArea">
+				<div class="content right">
+					<img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/PjVY66m/web-design.jpg" alt="web-design" border="0" /></a>
+					<h3>Web Design and Development</h3>
+					<p>Web design is the process of creating websites which is front end design. It encompasses several different aspects, including webpage layout, content production, and graphic design using the different technology and CMS. Web designers build webpages using HTML tags that define the content and metadata of each page.</p>
+				</div>
+				<div class="content left">
+					<img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/CtFWNzj/graphics-Design.jpg" alt="graphics-Design" border="0" /></a>
+					<h3>Graphics Design</h3>
+					<p>Web design is the process of creating websites which is front end design. It encompasses several different aspects, including webpage layout, content production, and graphic design using the different technology and CMS. Web designers build webpages using HTML tags that define the content and metadata of each page.</p>
+				</div>
+				<div class="content right">
+					<img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/kHnQYC5/Database.png" alt="Database" border="0" /></a>
+					<h3>Database Server Administration</h3>
+					<p>Web design is the process of creating websites which is front end design. It encompasses several different aspects, including webpage layout, content production, and graphic design using the different technology and CMS. Web designers build webpages using HTML tags that define the content and metadata of each page.</p>
+				</div>
+				<div class="content left">
+					<img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/DGS0bsn/Large-format-camera-lens.jpg" alt="Large-format-camera-lens" border="0" /></a>
+					<h3>Photography</h3>
+					<p>Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. </p>
+				</div>
+			</div>
+			
+			<h1 style="text-align:center;display:block;background-color:#808080;color:white">Experiance</h1>
+			<p>HTML</p>
+				<div class="container">
+				  <div class="skills html">90%</div>
+				</div>
+
+				<p>CSS</p>
+				<div class="container">
+				  <div class="skills css">80%</div>
+				</div>
+
+				<p>JavaScript</p>
+				<div class="container">
+				  <div class="skills js">65%</div>
+				</div>
+
+				<p>PHP</p>
+				<div class="container">
+				  <div class="skills php">60%</div>
+				</div>
+			
+			Write Somthing:<br>
+			<textarea>Write Somthing Here</textarea><br/><br/>
+			
+			<label for="salery">Expected Salery:</label><br />
+			<input type="number" /><br /><br />
+			
+			<input type="submit" onclick="dataSubmit()" value="Submit" />
+			<input type="reset" />
+			
+			</fieldset>
+		</form>
+		</div>
+		<script>
+			function dataSubmit(){
+				alert("Data Submit Successfully!!!!");
+			}
+		</script>
+	</body>
+</html>
